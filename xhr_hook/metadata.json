@@ -1,0 +1,17 @@
+{
+  "id": "xhr_hook",
+  "name": "拦截 XHR/Fetch 请求",
+  "description": "hook XMLHttpRequest 和 Fetch API，将请求上报后端",
+  "tags": ["network", "xhr", "fetch", "javascript"],
+  "group": "network_hooks",
+  "enabled": true,
+  "entry_point": "main.js",
+  "dependencies": [],
+  "order": 20,
+  "auto_start": false,
+  "env": {
+    "REPORT_URL": "http://localhost:8000/api/hooks/https",
+    "ENABLE_LOGGING": true,
+    "MAX_BODY_SIZE": 10240
+  }
+}

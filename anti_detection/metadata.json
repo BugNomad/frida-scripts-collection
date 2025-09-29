@@ -1,0 +1,18 @@
+{
+  "id": "anti_detection",
+  "name": "反检测脚本",
+  "description": "绕过常见的 Frida 检测机制，包括进程检测、文件系统检测、Native 层检测等",
+  "group": "security",
+  "tags": ["anti-detection", "stealth", "bypass", "security", "android", "ios"],
+  "enabled": true,
+  "entry_point": "main.js",
+  "dependencies": [],
+  "order": 1,
+  "auto_start": true,
+  "env": {
+    "ENABLE_LOGGING": true,
+    "HIDE_FROM_PS": true,
+    "SPOOF_MAPS": true,
+    "HIDE_THREADS": true
+  }
+}

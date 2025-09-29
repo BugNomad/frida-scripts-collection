@@ -1,0 +1,13 @@
+{
+  "id": "test_script",
+  "name": "Test Script",
+  "description": "简单的测试脚本，用于验证 Frida 连接和基本 Hook 功能",
+  "group": "test",
+  "tags": ["test", "android", "log"],
+  "enabled": true,
+  "entry_point": "main.js",
+  "dependencies": [],
+  "order": 1,
+  "auto_start": false,
+  "env": {}
+}

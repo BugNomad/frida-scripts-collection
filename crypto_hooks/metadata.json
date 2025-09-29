@@ -1,0 +1,21 @@
+{
+  "id": "crypto_hooks",
+  "name": "加密函数监控",
+  "description": "监控常见的加密算法调用，包括 AES、RSA、Base64、Hash 等，记录输入输出参数",
+  "group": "crypto",
+  "tags": ["crypto", "encryption", "aes", "rsa", "base64", "hash", "monitoring"],
+  "enabled": true,
+  "entry_point": "main.js",
+  "dependencies": [],
+  "order": 3,
+  "auto_start": false,
+  "env": {
+    "ENABLE_LOGGING": true,
+    "REPORT_URL": "http://localhost:8000/api/hooks/crypto",
+    "MAX_DATA_LENGTH": 1024,
+    "ENABLE_BASE64": true,
+    "ENABLE_AES": true,
+    "ENABLE_RSA": true,
+    "ENABLE_HASH": true
+  }
+}

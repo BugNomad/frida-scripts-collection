@@ -1,0 +1,17 @@
+{
+  "id": "urlsession_hook",
+  "name": "拦截 URLSession 请求",
+  "description": "hook NSURLSession/NSURLConnection，将请求上报后端 (iOS/macOS)",
+  "tags": ["network", "urlsession", "ios", "macos"],
+  "group": "network_hooks",
+  "enabled": true,
+  "entry_point": "main.js",
+  "dependencies": [],
+  "order": 30,
+  "auto_start": false,
+  "env": {
+    "REPORT_URL": "http://localhost:8000/api/hooks/https",
+    "ENABLE_LOGGING": true,
+    "MAX_BODY_SIZE": 10240
+  }
+}
