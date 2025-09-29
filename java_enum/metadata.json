@@ -1,0 +1,15 @@
+{
+  "id": "java_enum",
+  "name": "Java 类和方法枚举",
+  "description": "枚举 Android 应用中的 Java 类、方法和字段信息",
+  "group": "system_hooks",
+  "tags": ["java", "class", "method", "field", "enum", "android"],
+  "order": 13,
+  "auto_start": false,
+  "entry_point": "main.js",
+  "dependencies": [],
+  "env": {
+    "target_packages": "com.example,com.app",
+    "output_dir": "/data/local/tmp/java_enum"
+  }
+}

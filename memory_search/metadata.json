@@ -1,0 +1,16 @@
+{
+  "id": "memory_search",
+  "name": "内存搜索工具",
+  "description": "在进程内存中搜索特定的字符串、字节序列或模式",
+  "group": "system_hooks",
+  "tags": ["memory", "search", "pattern", "string", "bytes"],
+  "order": 12,
+  "auto_start": false,
+  "entry_point": "main.js",
+  "dependencies": [],
+  "env": {
+    "search_strings": "password,token,key,secret",
+    "search_hex": "deadbeef,cafebabe",
+    "output_dir": "/data/local/tmp/memory_search"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "native_dump",
+  "name": "Native 层函数导出",
+  "description": "导出 Native 层 SO 库的函数符号和内存信息",
+  "group": "system_hooks",
+  "tags": ["native", "so", "symbols", "dump", "reverse"],
+  "order": 11,
+  "auto_start": false,
+  "entry_point": "main.js",
+  "dependencies": [],
+  "env": {
+    "output_dir": "/data/local/tmp/native_dump",
+    "target_libs": "libnative-lib.so,libssl.so,libcrypto.so"
+  }
+}

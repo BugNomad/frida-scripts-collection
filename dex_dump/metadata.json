@@ -1,0 +1,14 @@
+{
+  "id": "dex_dump",
+  "name": "DEX 文件导出",
+  "description": "导出 Android 应用的 DEX 文件到指定目录",
+  "group": "system_hooks",
+  "tags": ["dex", "dump", "android", "reverse"],
+  "order": 10,
+  "auto_start": false,
+  "entry_point": "main.js",
+  "dependencies": [],
+  "env": {
+    "output_dir": "/data/local/tmp/dex_dump"
+  }
+}
